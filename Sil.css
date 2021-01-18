@@ -1,0 +1,62 @@
+
+
+body,h1,h2,h3,h4,h5 {
+
+  font-family: "Poppins", sans-serif
+
+}
+
+body {
+
+  font-size:16px;
+
+}
+
+.w3-half img {
+
+  margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer
+
+}
+
+.w3-half img:hover {
+
+  opacity:1
+
+}
+
+.contact_Item {
+  font-size:2vw;
+  padding:0.7vw;
+  color: white;
+}
+
+.contact_Item:hover, .contact_Item:active {
+  background-color: none;
+  font-size: 3vw;
+  padding: 0px;
+}
+
+.tweeter:hover, .tweeter:active {
+  color: #00acee;
+}
+
+.youtube:hover, .youtube:active {
+  color: #FF0000;
+}
+
+.instagram:hover, .instagram:active {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  color: #fff;
+  test-decoration: none;
+}
+
+.facebook:hover, .facebook:active {
+  color: #3b5998;
+}
+
+a:hover {
+  text-decoration: none;
+}

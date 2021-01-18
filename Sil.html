@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<title>Sali</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+
+<link rel="stylesheet" href="C:\Users\jjsan\Documents\webpages\Sil\Sil.css">
+<script src="C:\Users\jjsan\Documents\webpages\Sil\Sil.js"></script>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><img src="C:\Users\jjsan\Documents\webpages\Sil\logo.jpg" style="width:250px; text-align:center;"></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">A Sil</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Agricultura</a>
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Indústria</a>
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Produtos & Precos</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacto</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Agro-Indústria Sil</span>
+
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:20px" id="showcase">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Sobre a Sil</b></h1><br>
+
+    <p> De forma resumida, a empresa rural é definida como aquela que realiza atividades agrícolas com produção voltada ao mercado visando lucro. Atividades de subsistência não estão inclusas.
+    O empresário rural tem foco na administração e gestão do sistema e sempre busca melhorias para seus colaboradores e consumidores.O objetivo de uma empresa rural não é apenas produzir. É obter o melhor custo-benefício dentro do mercado que se deseja explorar.
+    Portanto, é necessário conhecer o ambiente em que sua empresa está inserida, os detalhes da produção e comercialização do produto para obter os melhores resultados.
+  </p><br>
+
+    <p><h2><b>A nossa equipa</b></h2></p><br>
+
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m2 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="C:\Users\jjsan\Documents\webpages\Sil\ceo.png" alt="XM" style="width:100%">
+          <div class="w3-container">
+            <h3>XM</h3>
+            <p class="w3-opacity">Fundador</p>
+            <p>Gxvcxzbxbz xbxv xbxbxx xbxbx xbxzzb xxxxxxxxxxxx bxxbx zxbx zzzbvbv zxbvxb zbvbz zbvb.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m2 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="C:\Users\jjsan\Documents\webpages\Sil\ceo.png" alt="SD" style="width:100%">
+          <div class="w3-container">
+            <h3>SD</h3>
+            <p class="w3-opacity">CEO</p>
+            <p>Wvdfsgfdbgd hjyjhj hjffh gdnnnngfn dfnnnfh fhmhh dthhhh gdnd fhmdd mhfd hfmmmm hmfmfm mfh.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col m2 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="C:\Users\jjsan\Documents\webpages\Sil\ceo.png" alt="SD" style="width:100%">
+          <div class="w3-container">
+            <h3>Joel</h3>
+            <p class="w3-opacity">Director Finaceiro</p>
+            <p>Wvdfsgfdbgd hjyjhj hjffh gdnnnngfn dfnnnfh fhmhh dthhhh gdnd fhmdd mhfd hfmmmm hmfmfm mfh.</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Agricultura</b></h1><br>
+    <p> De forma resumida, a empresa rural é definida como aquela que realiza atividades agrícolas com produção voltada ao mercado visando lucro. Atividades de subsistência não estão inclusas.
+    O empresário rural tem foco na administração e gestão do sistema e sempre busca melhorias para seus colaboradores e consumidores.O objetivo de uma empresa rural não é apenas produzir. É obter o melhor custo-benefício dentro do mercado que se deseja explorar.
+    Portanto, é necessário conhecer o ambiente em que sua empresa está inserida, os detalhes da produção e comercialização do produto para obter os melhores resultados.
+  </p>
+
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="C:\Users\jjsan\Documents\webpages\Sil\banana.jpg" style="width:100%" onclick="onClick(this)" alt="Bananas">
+      </div>
+
+      <div class="w3-half">
+        <img src="C:\Users\jjsan\Documents\webpages\Sil\limao.jpg" style="width:100%" onclick="onClick(this)" alt="Limoes">
+      </div>
+
+
+  </div>
+
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Indústria</b></h1>
+
+    <p> Indústria é uma atividade econômica que surgiu na Primeira Revolução Industrial, no fim do século XVIII e início do século XIX, na Inglaterra, e que tem por finalidade transformar matéria-prima em produtos comercializáveis, utilizando força humana, máquinas e energia.</p>
+    <p> De forma resumida, a empresa rural é definida como aquela que realiza atividades agrícolas com produção voltada ao mercado visando lucro. Atividades de subsistência não estão inclusas.
+    O empresário rural tem foco na administração e gestão do sistema e sempre busca melhorias para seus colaboradores e consumidores.O objetivo de uma empresa rural não é apenas produzir. É obter o melhor custo-benefício dentro do mercado que se deseja explorar.
+    Portanto, é necessário conhecer o ambiente em que sua empresa está inserida, os detalhes da produção e comercialização do produto para obter os melhores resultados.
+    </p>
+
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="C:\Users\jjsan\Documents\webpages\Sil\moagem3.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer 1">
+      </div>
+
+      <div class="w3-half">
+        <img src="C:\Users\jjsan\Documents\webpages\Sil\moagem2.png" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer 4">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Produtos & Precos</b></h1><br>
+    <p>Abaixo temos os nosso produtos agricolas e industriais companahados dos seus respectivos. Ademais, os produdos tem descricoes basicas.</p><br>
+  </div>
+
+  <p><h2><b>Produtos Agricolas</b></h2></p>
+
+  <div class="w3-row-padding">
+
+    <div class="w3-half">
+
+        <div class="w3-row-padding">
+          <div class="w3-col m4 w3-margin-bottom">
+            <div class="w3-light-grey">
+                <img src="C:\Users\jjsan\Documents\webpages\Sil\banana.jpg" style="width:100%" onclick="onClick(this)" alt="Bananas ">
+              <div class="w3-container">
+                <h3>Bananas</h3>
+                <p class="w3-opacity">500.00 KZ</p>
+                <p>Produzidas no Cuanza Norte e ...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w3-col m4 w3-margin-bottom">
+            <div class="w3-light-grey">
+                <img src="C:\Users\jjsan\Documents\webpages\Sil\limao.jpg" style="width:100%" onclick="onClick(this)" alt="Limoes">
+              <div class="w3-container">
+                <h3>Limoes</h3>
+                <p class="w3-opacity">290.00 KZ</p>
+                <p>Produzidas no Cuanza Norte e ...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w3-col m4 w3-margin-bottom">
+            <div class="w3-light-grey">
+                <img src="C:\Users\jjsan\Documents\webpages\Sil\farinha.jpg" style="width:100%" onclick="onClick(this)" alt="Fuba de Bombo">
+              <div class="w3-container">
+                <h3>Fuba de Bombo</h3>
+                <p class="w3-opacity">200.00 KZ</p>
+                <p>Produzidas no Cuanza Norte e ...</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="w3-half">
+
+          <div class="w3-row-padding">
+
+            <div class="w3-col m4 w3-margin-bottom">
+              <div class="w3-light-grey">
+                  <img src="C:\Users\jjsan\Documents\webpages\Sil\farinhaBanana.jpg" style="width:100%" onclick="onClick(this)" alt="Farinha de Banana">
+                <div class="w3-container">
+                  <h3>Farinha de Banana</h3>
+                  <p class="w3-opacity">1000.00 KZ</p>
+                  <p>Produzidas no Cuanza Norte e ...</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3-col m4 w3-margin-bottom">
+              <div class="w3-light-grey">
+                  <img src="C:\Users\jjsan\Documents\webpages\Sil\manga.jpg" style="width:100%" onclick="onClick(this)" alt="Manga">
+                <div class="w3-container">
+                  <h3>Manga</h3>
+                  <p class="w3-opacity">1000.00 KZ</p>
+                  <p>Produzidas no Cuanza Norte e ...</p>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div class="w3-light-grey">
+                  <img src="C:\Users\jjsan\Documents\webpages\Sil\mandioca.jpg" style="width:100%" onclick="onClick(this)" alt="Mandioca">
+                <div class="w3-container">
+                  <h3>Mandioca</h3>
+                  <p class="w3-opacity">4000.00 KZ</p>
+                  <p>Produzidas no Cuanza Norte e ...</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+      </div>
+
+    </div>
+
+    <p><h2><b>Produtos Industriais</b></h2></p></br>
+
+    <div class="w3-row-padding">
+
+      <div class="w3-half">
+
+            <div class="w3-row-padding">
+
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <img src="C:\Users\jjsan\Documents\webpages\Sil\moagem3.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer x">
+                  <div class="w3-container">
+                    <h3>Maquina de Moer x</h3>
+                    <p class="w3-opacity">5000,0000.00 KZ</p>
+                    <p>Maquina x, usa motor xx with 4x HP ....</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <img src="C:\Users\jjsan\Documents\webpages\Sil\moagem4.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer Y">
+                  <div class="w3-container">
+                    <h3>Maquina de Moer Y</h3>
+                    <p class="w3-opacity">700.00 KZ</p>
+                    <p>Maquina Y, usa motor YY with 4Y HP ....</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <img src="C:\Users\jjsan\Documents\webpages\Sil\moagem1.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer Z">
+                  <div class="w3-container">
+                    <h3>Maquina de Moer Z</h3>
+                    <p class="w3-opacity">2000,0000.00 KZ</p>
+                    <p>Maquina Z, usa motor ZZ with 4Z HP ....</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+      <div class="w3-half">
+
+              <div class="w3-row-padding">
+
+                <div class="w3-col m4 w3-margin-bottom">
+                  <div class="w3-light-grey">
+                     <img src="C:\Users\jjsan\Documents\webpages\Sil\moagem2.png" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer N">
+                    <div class="w3-container">
+                      <h3>Maquina de Moer N</h3>
+                      <p class="w3-opacity">1000,0000.00 KZ</p>
+                      <p>Maquina N, usa motor NN with 4N HP ....</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w3-col m4 w3-margin-bottom">
+                  <div class="w3-light-grey">
+                     <img src="C:\Users\jjsan\Documents\webpages\Sil\moagem5.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer P">
+                    <div class="w3-container">
+                      <h3>Maquina de Moer P</h3>
+                      <p class="w3-opacity">1000555,0000.00 KZ</p>
+                      <p>Maquina P, usa motor PP with 4P HP ....</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w3-col m4 w3-margin-bottom">
+                  <div class="w3-light-grey">
+                     <img src="C:\Users\jjsan\Documents\webpages\Sil\moagem6.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer R">
+                    <div class="w3-container">
+                      <h3>Maquina de Moer N</h3>
+                      <p class="w3-opacity">1000,0000.00 KZ</p>
+                      <p>Maquina R, usa motor R with 4R HP ....</p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contacto</b></h1><br>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Para mais informacoes, nao hesite em nos contactar!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Nome</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Mensagem</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-highway-green w3-margin-bottom">Enviar</button>
+    </form>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-highway-green w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+
+  <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+
+  <div class="w3-left w3-container">
+    <a href="#contact" class=""><i class="fa fa-envelope contact_Item envelope w3-"></i>
+    <a href="#" class=""> <i class="fa fa-instagram contact_Item instagram"></i> </a>
+    <a href="#" class=""> <i class="fa fa-facebook contact_Item facebook"></i> </a>
+    <a href="#" class=""> <i class="fa fa-youtube contact_Item youtube"></i> </a>
+    <a href="#" class=""> <i class="fa fa-twitter contact_Item tweeter"></i> </a>
+
+  </div>
+</div>
+
+
+</body>
+</html>
