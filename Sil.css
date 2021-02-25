@@ -26,8 +26,35 @@ body {
 
 .contact_Item {
   font-size:2vw;
-  padding:0.7vw;
+  padding:0.8vw;
   color: white;
+}
+
+.sobreMarginTop {
+  margin-top: 0px;
+}
+
+.socialMediaMarginTop {
+  margin-top: 13vh;
+}
+
+.membro {
+  width:80%;
+}
+
+@media only screen and (max-width: 601px) {
+  .contact_Item {
+    padding:2vw;
+  }
+  .sobreMarginTop {
+    margin-top:55px;
+  }
+  .socialMediaMarginTop {
+    margin-top: 18vh;
+  }
+  .membro {
+    width:50%;
+  }
 }
 
 .contact_Item:hover, .contact_Item:active {
