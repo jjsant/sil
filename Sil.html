@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-<title>Sal</title>
+<title>Sil</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,17 +17,18 @@
 
 <body>
 
-<!-- Sidebar/menu -->
+<!-- Sidebar/menu   w3-hide-large-->
 <nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft w3-hover-red" style="width:100%;font-size:22px"><i class="fa fa-remove"></i></a>
   <div class="w3-container">
     <h3 class="w3-padding-64"><img src="C:\Users\JORGE\Documents\My Web Sites\sil\logo.jpg" style="width:250px; text-align:center;"></b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#Sobre" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sobre a Sil</a>
+
+    <a href="#Produtos&Precos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Produtos & Precos</a>
     <a href="#Agricultura" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Agricultura</a>
     <a href="#Industria" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Indústria</a>
-    <a href="#Produtos&Precos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Produtos & Precos</a>
+    <a href="#Sobre" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sobre a Sil</a>
     <a href="#Contacto" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacto</a>
 
     <div class="w3-container w3-bar-item socialMediaMarginTop w3-center" style="">
@@ -45,86 +46,21 @@
 
 </nav>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+<!-- Top menu on small screens  -->
+<header class="w3-container w3-top  w3-green w3-hide-large w3-xlarge w3-padding">
 <!--  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right w3-hover-red" onclick="w3_open()">☰</a>   -->
   <a href="javascript:void(0)" class="w3-margin-right" onclick="w3_open()"><i class="fa fa-bars bars"></i></a>
   <span class="w3-display-middle">Agro-Indústria Sil</span>
 
 </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
+<!-- Overlay effect when opening sidebar on small screens  -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="w3-container sobreMarginTop" style=" " id="Sobre">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Sobre a Sil</b></h1><br>
-
-    <p> De forma resumida, a empresa rural é definida como aquela que realiza atividades agrícolas com produção voltada ao mercado visando lucro. Atividades de subsistência não estão inclusas.
-    O empresário rural tem foco na administração e gestão do sistema e sempre busca melhorias para seus colaboradores e consumidores.O objetivo de uma empresa rural não é apenas produzir. É obter o melhor custo-benefício dentro do mercado que se deseja explorar.
-    Portanto, é necessário conhecer o ambiente em que sua empresa está inserida, os detalhes da produção e comercialização do produto para obter os melhores resultados.
-  </p><br>
-
-    <p><h2><b>A nossa equipa</b></h2></p><br>
-
-    <div class="w3-row-padding w3-grayscale w3-center">
-
-      <div class="w3-col m4 w3-margin-bottom w3-center">
-        <div class="w3-white membro w3-center ">
-          <img class="w3-circle" src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" id="fundadorPhoto" style="width:100%;"
-            alt="TAS: a future artist who is doing computer engineering because she can"/>
-          <div class="w3-container w3-center w3-light-grey">
-            <h3>TAS</h3>
-            <p class="w3-opacity w3-light-grey">Fundador</p>
-          </div>
-          <button class="w3-button w3-block w3-hover-light-green w3-green" onclick="onClick(fundadorPhoto)" >Mais Info</button>
-        </div>
-      </div>
-
-      <div class="w3-col m4 w3-margin-bottom w3-center">
-        <div class="w3-white membro w3-center w3-card-4">
-          <img src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" id="ceoPhoto" alt="TAS: cat's and Switzerland's lover" style="width:100%">
-          <div class="w3-container">
-            <h3>TAS</h3>
-            <p class="w3-opacity">CEO</p>
-          </div>
-          <button class="w3-button w3-block w3-hover-light-green w3-green" onclick="onClick(ceoPhoto)" >Mais Info</button>
-        </div>
-      </div>
-
-      <div class="w3-col m4 w3-margin-bottom w3-center">
-        <div class="w3-light-grey membro w3-center">
-          <img src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" id="drPhoto" alt="TAS: road trips, amusement parks, and Mexican food are all needed quite frequently" style="width:100%">
-          <div class="w3-container">
-            <h3>TAS</h3>
-            <p class="w3-opacity">Director Finaceiro</p>
-          </div>
-          <button class="w3-button w3-block w3-hover-light-green w3-green" onclick="onClick(drPhoto)" >Mais Info</button>
-        </div>
-      </div>
-
-      <div class="w3-col m4 w3-margin-bottom w3-center w3-hide-large">
-        <div class="w3-white w3-container">
-          <img class="w3-circle" src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" id="fundadorPhoto" class="w3-left w3-circle w3-margin-right" style="width:50%" alt="TAS: CEO"/>
-            <p class="w3-opacity w3-light-grey">TAS: Fundador</p>
-            <p>A future artist who is doing computer engineering because she can</p>
-          <button class="w3-button w3-block w3-hover-light-green w3-green w3-hide-small" onclick="onClick(fundadorPhoto)" >Mais Info</button>
-        </div>
-      </div>
-
-
-      <div class="w3-col m4 w3-margin-bottom" style="width:100%">
-            <div class="w3-card-4 w3-container">
-              <img src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:30%; margin-top:4%">
-              <p class="w3-left w3-margin-right" style="margin-top:8%">TAS: founder</p>
-              <h5 class="w3-left w3-margin-right" style="margin-top:15%">Get your life together, dude :) </h5>
-                  </div>
-      </div>
-
-  </div>
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -135,55 +71,27 @@
     </div>
   </div>
 
-  <!-- Services -->
-  <div class="w3-container" id="Agricultura" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Agricultura</b></h1><br>
-    <p> De forma resumida, a empresa rural é definida como aquela que realiza atividades agrícolas com produção voltada ao mercado visando lucro. Atividades de subsistência não estão inclusas.
-    O empresário rural tem foco na administração e gestão do sistema e sempre busca melhorias para seus colaboradores e consumidores.O objetivo de uma empresa rural não é apenas produzir. É obter o melhor custo-benefício dentro do mercado que se deseja explorar.
-    Portanto, é necessário conhecer o ambiente em que sua empresa está inserida, os detalhes da produção e comercialização do produto para obter os melhores resultados.
-  </p>
+    <!-- Slideshow of photos -->
 
-    <div class="w3-row-padding">
-      <div class="w3-half">
-        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\banana.jpg" style="width:100%" onclick="onClick(this)" alt="Planatcao de banana">
-      </div>
+<!--
+  <div class="w3-content w3-section slideshow-container w3-center sobreMarginTop w3-hide-large">
 
-      <div class="w3-half">
-        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\limao.jpg" style="width:100%" onclick="onClick(this)" alt="Plantacao de limao">
-      </div>
+    <img class="photoSlides" src="C:\Users\JORGE\Documents\My Web Sites\sil\banana.jpg" style="width:100%" onclick="onClick(this)" alt="Bananas">
+    <img class="photoSlides" src="C:\Users\JORGE\Documents\My Web Sites\sil\limao.jpg" style="width:100%" onclick="onClick(this)" alt="Limoes">
+    <img class="photoSlides" src="C:\Users\JORGE\Documents\My Web Sites\sil\farinha.jpg" style="width:100%" onclick="onClick(this)" alt="Fuba de Bombo">
+    <img class="photoSlides" src="C:\Users\JORGE\Documents\My Web Sites\sil\farinhaBanana.jpg" style="width:100%" onclick="onClick(this)" alt="Farinha de Banana">
+    <img class="photoSlides" src="C:\Users\JORGE\Documents\My Web Sites\sil\manga.jpg" style="width:100%" onclick="onClick(this)" alt="Manga">
+    <img class="photoSlides" src="C:\Users\JORGE\Documents\My Web Sites\sil\mandioca.jpg" style="width:100%" onclick="onClick(this)" alt="Mandioca">
 
+  </div>             -->
 
-  </div>
-
-  <!-- Designers -->
-  <div class="w3-container" id="Industria" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Indústria</b></h1>
-
-    <p> Indústria é uma atividade econômica que surgiu na Primeira Revolução Industrial, no fim do século XVIII e início do século XIX, na Inglaterra, e que tem por finalidade transformar matéria-prima em produtos comercializáveis, utilizando força humana, máquinas e energia.</p>
-    <p> De forma resumida, a empresa rural é definida como aquela que realiza atividades agrícolas com produção voltada ao mercado visando lucro. Atividades de subsistência não estão inclusas.
-    O empresário rural tem foco na administração e gestão do sistema e sempre busca melhorias para seus colaboradores e consumidores.O objetivo de uma empresa rural não é apenas produzir. É obter o melhor custo-benefício dentro do mercado que se deseja explorar.
-    Portanto, é necessário conhecer o ambiente em que sua empresa está inserida, os detalhes da produção e comercialização do produto para obter os melhores resultados.
-    </p>
-
-    <div class="w3-row-padding">
-      <div class="w3-half">
-        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\industria1.jpg" style="width:100%" onclick="onClick(this)" alt="Oficina">
-      </div>
-
-      <div class="w3-half">
-        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\industria2.jpg" style="width:100%" onclick="onClick(this)" alt="Maquinaria">
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="Produtos&Precos" style="margin-top:75px">
+  <!-- Produtos & Precos -->
+  <div class="w3-container sobreMarginTop" id="Produtos&Precos">
     <h1 class="w3-xxxlarge w3-text-red"><b>Produtos & Precos</b></h1><br>
     <p>Abaixo temos os nosso produtos agricolas e industriais companahados dos seus respectivos. Ademais, os produdos tem descricoes basicas.</p><br>
   </div>
 
+  <!--Produtos Agricolas -->
   <p><h2><b>Produtos Agricolas</b></h2></p>
 
   <div class="w3-row-padding">
@@ -276,6 +184,8 @@
 
     </div>
 
+      <!--Produtos Industriais -->
+
     <p><h2><b>Produtos Industriais</b></h2></p></br>
 
     <div class="w3-row-padding">
@@ -325,7 +235,117 @@
     </div>
 
 
-  <!-- Contact -->
+  <!-- Agricultura -->
+  <div class="w3-container" id="Agricultura" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Agricultura</b></h1><br>
+    <p> De forma resumida, a empresa rural é definida como aquela que realiza atividades agrícolas com produção voltada ao mercado visando lucro. Atividades de subsistência não estão inclusas.
+    O empresário rural tem foco na administração e gestão do sistema e sempre busca melhorias para seus colaboradores e consumidores.O objetivo de uma empresa rural não é apenas produzir. É obter o melhor custo-benefício dentro do mercado que se deseja explorar.
+    Portanto, é necessário conhecer o ambiente em que sua empresa está inserida, os detalhes da produção e comercialização do produto para obter os melhores resultados.
+  </p>
+
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\banana.jpg" style="width:100%" onclick="onClick(this)" alt="Planatcao de banana">
+      </div>
+
+      <div class="w3-half">
+        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\limao.jpg" style="width:100%" onclick="onClick(this)" alt="Plantacao de limao">
+      </div>
+
+
+  </div>
+
+  <!-- Indústria -->
+  <div class="w3-container" id="Industria" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Indústria</b></h1>
+
+    <p> Indústria é uma atividade econômica que surgiu na Primeira Revolução Industrial, no fim do século XVIII e início do século XIX, na Inglaterra, e que tem por finalidade transformar matéria-prima em produtos comercializáveis, utilizando força humana, máquinas e energia.</p>
+    <p> De forma resumida, a empresa rural é definida como aquela que realiza atividades agrícolas com produção voltada ao mercado visando lucro. Atividades de subsistência não estão inclusas.
+    O empresário rural tem foco na administração e gestão do sistema e sempre busca melhorias para seus colaboradores e consumidores.O objetivo de uma empresa rural não é apenas produzir. É obter o melhor custo-benefício dentro do mercado que se deseja explorar.
+    Portanto, é necessário conhecer o ambiente em que sua empresa está inserida, os detalhes da produção e comercialização do produto para obter os melhores resultados.
+    </p>
+
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\industria1.jpg" style="width:100%" onclick="onClick(this)" alt="Oficina">
+      </div>
+
+      <div class="w3-half">
+        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\industria2.jpg" style="width:100%" onclick="onClick(this)" alt="Maquinaria">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sobre a Sil -->
+
+  <div class="w3-container" style=" " id="Sobre">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Sobre a Sil</b></h1><br>
+
+    <p> De forma resumida, a empresa rural é definida como aquela que realiza atividades agrícolas com produção voltada ao mercado visando lucro. Atividades de subsistência não estão inclusas.
+    O empresário rural tem foco na administração e gestão do sistema e sempre busca melhorias para seus colaboradores e consumidores.O objetivo de uma empresa rural não é apenas produzir. É obter o melhor custo-benefício dentro do mercado que se deseja explorar.
+    Portanto, é necessário conhecer o ambiente em que sua empresa está inserida, os detalhes da produção e comercialização do produto para obter os melhores resultados.
+  </p><br>
+
+    <p><h2><b>A nossa equipa</b></h2></p><br>
+
+    <div class="w3-row-padding w3-grayscale w3-center">
+
+      <div class="w3-col m4 w3-margin-bottom w3-center">
+        <div class="w3-white membro w3-center ">
+          <img class="w3-circle" src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" id="fundadorPhoto" style="width:100%" alt="TAS: a future artist who is doing computer engineering because she can">
+          <div class="w3-container w3-center w3-light-grey">
+            <h3>TAS</h3>
+            <p class="w3-opacity w3-light-grey">Fundador</p>
+          </div>
+          <button class="w3-button w3-block w3-hover-light-green w3-green" onclick="onClick(fundadorPhoto)">Mais Info</button>
+        </div>
+      </div>
+
+      <div class="w3-col m4 w3-margin-bottom w3-center">
+        <div class="w3-white membro w3-center w3-card-4">
+          <img src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" id="ceoPhoto" alt="TAS: cat's and Switzerland's lover. Road trips, amusement parks, and Mexican food are all needed quite frequently" style="width:100%">
+          <div class="w3-container">
+            <h3>TAS</h3>
+            <p class="w3-opacity">CEO</p>
+          </div>
+          <button class="w3-button w3-block w3-hover-light-green w3-green" onclick="onClick(ceoPhoto)" >Mais Info</button>
+        </div>
+      </div>
+
+      <div class="w3-col m4 w3-margin-bottom w3-center">
+        <div class="w3-light-grey membro w3-center">
+          <img src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" id="drPhoto" alt="TAS: a future artist who is doing computer engineering because she can" style="width:100%">
+          <div class="w3-container">
+            <h3>TAS</h3>
+            <p class="w3-opacity">Director Finaceiro</p>
+          </div>
+          <button class="w3-button w3-block w3-hover-light-green w3-green" onclick="onClick(drPhoto)" >Mais Info</button>
+        </div>
+      </div>
+
+      <div class="w3-col m4 w3-margin-bottom w3-center w3-hide-large">
+        <div class="w3-white w3-container">
+          <img class="w3-circle" src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" id="fundadorPhoto" class="w3-left w3-circle w3-margin-right" style="width:50%" alt="TAS: CEO"/>
+            <p class="w3-opacity w3-light-grey">TAS: Fundador</p>
+            <p>A future artist who is doing computer engineering because she can</p>
+          <button class="w3-button w3-block w3-hover-light-green w3-green w3-hide-small" onclick="onClick(fundadorPhoto)" >Mais Info</button>
+        </div>
+      </div>
+
+
+      <div class="w3-col m4 w3-margin-bottom" style="width:100%">
+            <div class="w3-card-4 w3-container">
+              <img src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:30%; margin-top:4%">
+              <p class="w3-left w3-margin-right" style="margin-top:8%">TAS: founder</p>
+              <h5 class="w3-left w3-margin-right" style="margin-top:15%">Get your life together, dude :) </h5>
+                  </div>
+      </div>
+
+  </div>
+
+
+  <!-- Contactos -->
   <div class="w3-container" id="Contacto" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Contacto</b></h1><br>
     <p>Para mais informacoes, nao hesite em nos contactar!</p>
@@ -356,6 +376,25 @@
   <p class="w3-center"><h5>Copyright © 2021 – All Rights Reserved</h5></p>
 </div>
 
+<!--
+<script>
+
+var myIndex = 0;
+mySlideShow();
+
+function mySlideShow() {
+  var i;
+  var y = document.getElementsByClassName("photoSlides");
+  var (i = 0; i < y.length; i++) {
+    y[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > y.length) {myIndex = 1}
+  y[myIndex-1].style.display = "block";
+  setTimeout(mySlideShow, 5000); // Change image every 2 seconds
+}
+
+</script>  -->
 
 </body>
 </html>

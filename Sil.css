@@ -12,6 +12,14 @@ img {
   margin-bottom:16px;
 }
 
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+.photoSlides {display:none;}
+
 .contact_Item {
   font-size:2vw;
   padding:0.8vw;
@@ -27,7 +35,7 @@ img {
 }
 
 .membro {
-  width:80%;
+  width:60%;
   text-align: center;
 }
 
@@ -40,13 +48,18 @@ img {
     padding:2vw;
   }
   .sobreMarginTop {
-    margin-top:55px;
+    margin-top:8%;
   }
   .socialMediaMarginTop {
     margin-top: 18vh;
   }
   .membro {
     width:50%;
+  }
+  .slideshow-container {
+    max-width: 95%;
+    position: relative;
+    margin: auto;
   }
 }
 
@@ -91,5 +104,3 @@ img {
 a:hover {
   text-decoration: none;
 }
-
-img{white-space:pre;}
