@@ -47,7 +47,8 @@
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right w3-hover-red" onclick="w3_open()">☰</a>
+<!--  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right w3-hover-red" onclick="w3_open()">☰</a>   -->
+  <a href="javascript:void(0)" class="w3-margin-right" onclick="w3_open()"><i class="fa fa-bars bars"></i></a>
   <span class="w3-display-middle">Agro-Indústria Sil</span>
 
 </header>
@@ -69,47 +70,65 @@
 
     <p><h2><b>A nossa equipa</b></h2></p><br>
 
-    <div class="w3-row-padding w3-grayscale">
+    <div class="w3-row-padding w3-grayscale w3-center">
 
       <div class="w3-col m4 w3-margin-bottom w3-center">
-        <div class="w3-light-grey membro w3-center">
-          <img src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" alt="XM" style="width:100%; height:70%">
-          <div class="w3-container w3-center">
-            <h3>XM</h3>
-            <p class="w3-opacity">Fundador</p>
-            <p class="w3-hide-small">Wvdfsgfdbgd hjyjhj hjffh gdnnnngfn dfnnnfh fhmhh dthhhh gdnd fhmdd mhfd hfmmmm hmfmfm mfh.</p>
-
+        <div class="w3-white membro w3-center ">
+          <img class="w3-circle" src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" id="fundadorPhoto" style="width:100%;"
+            alt="TAS: a future artist who is doing computer engineering because she can"/>
+          <div class="w3-container w3-center w3-light-grey">
+            <h3>TAS</h3>
+            <p class="w3-opacity w3-light-grey">Fundador</p>
           </div>
+          <button class="w3-button w3-block w3-hover-light-green w3-green" onclick="onClick(fundadorPhoto)" >Mais Info</button>
         </div>
       </div>
 
       <div class="w3-col m4 w3-margin-bottom w3-center">
-        <div class="w3-light-grey membro w3-center">
-          <img src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" alt="SD" style="width:100%">
+        <div class="w3-white membro w3-center w3-card-4">
+          <img src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" id="ceoPhoto" alt="TAS: cat's and Switzerland's lover" style="width:100%">
           <div class="w3-container">
-            <h3>SD</h3>
+            <h3>TAS</h3>
             <p class="w3-opacity">CEO</p>
-            <p>Wvdfsgfdbgd hjyjhj hjffh gdnnnngfn dfnnnfh fhmhh dthhhh gdnd fhmdd mhfd hfmmmm hmfmfm mfh.</p>
           </div>
+          <button class="w3-button w3-block w3-hover-light-green w3-green" onclick="onClick(ceoPhoto)" >Mais Info</button>
         </div>
       </div>
 
       <div class="w3-col m4 w3-margin-bottom w3-center">
         <div class="w3-light-grey membro w3-center">
-          <img src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" alt="SD" style="width:100%">
+          <img src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" id="drPhoto" alt="TAS: road trips, amusement parks, and Mexican food are all needed quite frequently" style="width:100%">
           <div class="w3-container">
-            <h3>Joel</h3>
+            <h3>TAS</h3>
             <p class="w3-opacity">Director Finaceiro</p>
-            <p>Wvdfsgfdbgd hjyjhj hjffh gdnnnngfn dfnnnfh fhmhh dthhhh gdnd fhmdd mhfd hfmmmm hmfmfm mfh.</p>
           </div>
+          <button class="w3-button w3-block w3-hover-light-green w3-green" onclick="onClick(drPhoto)" >Mais Info</button>
         </div>
+      </div>
+
+      <div class="w3-col m4 w3-margin-bottom w3-center w3-hide-large">
+        <div class="w3-white w3-container">
+          <img class="w3-circle" src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" id="fundadorPhoto" class="w3-left w3-circle w3-margin-right" style="width:50%" alt="TAS: CEO"/>
+            <p class="w3-opacity w3-light-grey">TAS: Fundador</p>
+            <p>A future artist who is doing computer engineering because she can</p>
+          <button class="w3-button w3-block w3-hover-light-green w3-green w3-hide-small" onclick="onClick(fundadorPhoto)" >Mais Info</button>
+        </div>
+      </div>
+
+
+      <div class="w3-col m4 w3-margin-bottom" style="width:100%">
+            <div class="w3-card-4 w3-container">
+              <img src="C:\Users\JORGE\Documents\My Web Sites\sil\ceo.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:30%; margin-top:4%">
+              <p class="w3-left w3-margin-right" style="margin-top:8%">TAS: founder</p>
+              <h5 class="w3-left w3-margin-right" style="margin-top:15%">Get your life together, dude :) </h5>
+                  </div>
       </div>
 
   </div>
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <button class="w3-button w3-black w3-xxlarge w3-display-topright w3-hover-black"><i class="fa fa-times-circle timesCircle"></i></button>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
       <img id="img01" class="w3-image">
       <p id="caption"></p>
@@ -126,11 +145,11 @@
 
     <div class="w3-row-padding">
       <div class="w3-half">
-        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\banana.jpg" style="width:75%" onclick="onClick(this)" alt="Bananas">
+        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\banana.jpg" style="width:100%" onclick="onClick(this)" alt="Planatcao de banana">
       </div>
 
       <div class="w3-half">
-        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\limao.jpg" style="width:75%" onclick="onClick(this)" alt="Limoes">
+        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\limao.jpg" style="width:100%" onclick="onClick(this)" alt="Plantacao de limao">
       </div>
 
 
@@ -148,11 +167,11 @@
 
     <div class="w3-row-padding">
       <div class="w3-half">
-        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\moagem3.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer 1">
+        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\industria1.jpg" style="width:100%" onclick="onClick(this)" alt="Oficina">
       </div>
 
       <div class="w3-half">
-        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\moagem2.png" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer 4">
+        <img src="C:\Users\JORGE\Documents\My Web Sites\sil\industria2.jpg" style="width:100%" onclick="onClick(this)" alt="Maquinaria">
       </div>
     </div>
   </div>
@@ -173,10 +192,13 @@
             <div class="w3-light-grey">
                 <img src="C:\Users\JORGE\Documents\My Web Sites\sil\banana.jpg" style="width:100%" onclick="onClick(this)" alt="Bananas ">
               <div class="w3-container">
-                <h3>Bananas</h3>
+                <h4>Bananas</h4>
                 <p class="w3-opacity">500.00 KZ</p>
-                <p>Produzidas no Cuanza Norte e ...</p>
               </div>
+              <button class="w3-button w3-block w3-hover-white w3-light-grey" onclick="product_Details('Bananas')" >+ informacoes</button>
+                <div class="w3-hide w3-light-grey" id="Bananas">
+                  <p>Produzidas no Cuanza Norte e ...fffddf dfdgfgg dffdsdf dffddfgfgd dffdsdfdfdf dffddfgf dfgdgsdf dfgfdgfd dfgdfgdd</p>
+                </div>
             </div>
           </div>
 
@@ -184,10 +206,13 @@
             <div class="w3-light-grey">
                 <img src="C:\Users\JORGE\Documents\My Web Sites\sil\limao.jpg" style="width:100%" onclick="onClick(this)" alt="Limoes">
               <div class="w3-container">
-                <h3>Limoes</h3>
+                <h4>Limoes</h4>
                 <p class="w3-opacity">290.00 KZ</p>
-                <p>Produzidas no Cuanza Norte e ...</p>
               </div>
+              <button class="w3-button w3-block w3-hover-white w3-light-grey" onclick="product_Details('Limoes')" >+ informacoes</button>
+                <div class="w3-hide w3-light-grey" id="Limoes">
+                  <p>Produzidas no Cuanza Norte e ...fffddf dfdgfgg dffdsdf dffddfgfgd dffdsdfdfdf dffddfgf dfgdgsdf dfgfdgfd dfgdfgdd</p>
+                </div>
             </div>
           </div>
 
@@ -195,10 +220,13 @@
             <div class="w3-light-grey">
                 <img src="C:\Users\JORGE\Documents\My Web Sites\sil\farinha.jpg" style="width:100%" onclick="onClick(this)" alt="Fuba de Bombo">
               <div class="w3-container">
-                <h3>Fuba de Bombo</h3>
+                <h4>Fuba de bombo</h4>
                 <p class="w3-opacity">200.00 KZ</p>
-                <p>Produzidas no Cuanza Norte e ...</p>
               </div>
+              <button class="w3-button w3-block w3-hover-white w3-light-grey" onclick="product_Details('FubaDeBombo')" >+ informacoes</button>
+                <div class="w3-hide w3-light-grey" id="FubaDeBombo">
+                  <p>Produzidas no Cuanza Norte e ...fffddf dfdgfgg dffdsdf dffddfgfgd dffdsdfdfdf dffddfgf dfgdgsdf dfgfdgfd dfgdfgdd</p>
+                </div>
             </div>
           </div>
 
@@ -206,10 +234,14 @@
               <div class="w3-light-grey">
                   <img src="C:\Users\JORGE\Documents\My Web Sites\sil\farinhaBanana.jpg" style="width:100%" onclick="onClick(this)" alt="Farinha de Banana">
                 <div class="w3-container">
-                  <h3>Farinha de Banana</h3>
+                  <h4>Farinha de Banana</h4>
                   <p class="w3-opacity">1000.00 KZ</p>
-                  <p>Produzidas no Cuanza Norte e ...</p>
+
                 </div>
+                <button class="w3-button w3-block w3-hover-white w3-light-grey" onclick="product_Details('FarinhaDeBanana')" >+ informacoes</button>
+                  <div class="w3-hide w3-light-grey" id="FarinhaDeBanana">
+                    <p>Produzidas no Cuanza Norte e ...fffddf dfdgfgg dffdsdf dffddfgfgd dffdsdfdfdf dffddfgf dfgdgsdf dfgfdgfd dfgdfgdd</p>
+                  </div>
               </div>
             </div>
 
@@ -217,10 +249,14 @@
               <div class="w3-light-grey">
                   <img src="C:\Users\JORGE\Documents\My Web Sites\sil\manga.jpg" style="width:100%" onclick="onClick(this)" alt="Manga">
                 <div class="w3-container">
-                  <h3>Manga</h3>
+                  <h4>Manga</h4>
                   <p class="w3-opacity">1000.00 KZ</p>
-                  <p>Produzidas no Cuanza Norte e ...</p>
+
                 </div>
+                <button class="w3-button w3-block w3-hover-white w3-light-grey" onclick="product_Details('Manga')" >+ informacoes</button>
+                  <div class="w3-hide w3-light-grey" id="Manga">
+                    <p>Produzidas no Cuanza Norte e ...fffddf dfdgfgg dffdsdf dffddfgfgd dffdsdfdfdf dffddfgf dfgdgsdf dfgfdgfd dfgdfgdd</p>
+                  </div>
               </div>
             </div>
 
@@ -228,10 +264,13 @@
               <div class="w3-light-grey">
                   <img src="C:\Users\JORGE\Documents\My Web Sites\sil\mandioca.jpg" style="width:100%" onclick="onClick(this)" alt="Mandioca">
                 <div class="w3-container">
-                  <h3>Mandioca</h3>
+                  <h4>Mandioca</h4>
                   <p class="w3-opacity">4000.00 KZ</p>
-                  <p>Produzidas no Cuanza Norte e ...</p>
                 </div>
+                <button class="w3-button w3-block w3-hover-white w3-light-grey" onclick="product_Details('Mandioca')" >+ informacoes</button>
+                  <div class="w3-hide w3-light-grey" id="Mandioca">
+                    <p>Produzidas no Cuanza Norte e ...fffddf dfdgfgg dffdsdf dffddfgfgd dffdsdfdfdf dffddfgf dfgdgsdf dfgfdgfd dfgdfgdd</p>
+                  </div>
               </div>
             </div>
 
@@ -241,71 +280,48 @@
 
     <div class="w3-row-padding">
 
-              <div class="w3-col m3 w3-margin-bottom">
+              <div class="w3-col m4 w3-margin-bottom">
                 <div class="w3-light-grey">
-                    <img src="C:\Users\JORGE\Documents\My Web Sites\sil\moagem3.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer x">
+                    <img src="C:\Users\JORGE\Documents\My Web Sites\sil\moagem1.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer x">
                   <div class="w3-container">
-                    <h3>Maquina de Moer x</h3>
+                    <h4>Maquina X</h4>
                     <p class="w3-opacity">5000,0000.00 KZ</p>
-                    <p>Maquina x, usa motor xx with 4x HP ....</p>
                   </div>
+                  <button class="w3-button w3-block w3-hover-white w3-light-grey" onclick="product_Details('moagem1')" >+ informacoes</button>
+                    <div class="w3-hide w3-light-grey" id="moagem1">
+                      <p>Maquina x, usa motor xx with 4x HP .... Produzidas no Cuanza Norte e ...fffddf dfdgfgg dffdsdf dffddfgfgd dffdsdfdfdf dffddfgf dfgdgsdf dfgfdgfd dfgdfgdd</p>
+                    </div>
                 </div>
               </div>
 
-              <div class="w3-col m3 w3-margin-bottom">
+              <div class="w3-col m4 w3-margin-bottom">
                 <div class="w3-light-grey">
-                    <img src="C:\Users\JORGE\Documents\My Web Sites\sil\moagem4.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer Y">
+                    <img src="C:\Users\JORGE\Documents\My Web Sites\sil\moagem2.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer Y">
                   <div class="w3-container">
-                    <h3>Maquina de Moer Y</h3>
+                    <h4>Maquina Y</h4>
                     <p class="w3-opacity">700.00 KZ</p>
-                    <p>Maquina Y, usa motor YY with 4Y HP ....</p>
                   </div>
+                  <button class="w3-button w3-block w3-hover-white w3-light-grey" onclick="product_Details('moagem2')" >+ informacoes</button>
+                    <div class="w3-hide w3-light-grey" id="moagem2">
+                      <p>Maquina Y, usa motor YY with 4Y HP .... .... Produzidas no Cuanza Norte e ...fffddf dfdgfgg dffdsdf dffddfgfgd dffdsdfdfdf dffddfgf dfgdgsdf dfgfdgfd dfgdfgdd</p>
+                    </div>
                 </div>
               </div>
 
-              <div class="w3-col m3 w3-margin-bottom">
+              <div class="w3-col m4 w3-margin-bottom">
                 <div class="w3-light-grey">
-                    <img src="C:\Users\JORGE\Documents\My Web Sites\sil\moagem1.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer Z">
+                    <img src="C:\Users\JORGE\Documents\My Web Sites\sil\moagem3.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer Z">
                   <div class="w3-container">
-                    <h3>Maquina de Moer Z</h3>
+                    <h4>Maquina Z</h4>
                     <p class="w3-opacity">2000,0000.00 KZ</p>
-                    <p>Maquina Z, usa motor ZZ with 4Z HP ....</p>
+                  </div>
+                  <button class="w3-button w3-block w3-hover-white w3-light-grey" onclick="product_Details('moagem3')" >+ informacoes</button>
+                  <div class="w3-hide w3-light-grey" id="moagem3">
+                    <p>Maquina Z, usa motor ZZ with 4Z HP .... .... .... Produzidas no Cuanza Norte e ...fffddf dfdgfgg dffdsdf dffddfgfgd dffdsdfdfdf dffddfgf dfgdgsdf dfgfdgfd dfgdfgdd</p>
                   </div>
                 </div>
               </div>
 
-                <div class="w3-col m3 w3-margin-bottom">
-                  <div class="w3-light-grey">
-                     <img src="C:\Users\JORGE\Documents\My Web Sites\sil\moagem2.png" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer N">
-                    <div class="w3-container">
-                      <h3>Maquina de Moer N</h3>
-                      <p class="w3-opacity">1000,0000.00 KZ</p>
-                      <p>Maquina N, usa motor NN with 4N HP ....</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="w3-col m3 w3-margin-bottom">
-                  <div class="w3-light-grey">
-                     <img src="C:\Users\JORGE\Documents\My Web Sites\sil\moagem5.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer P">
-                    <div class="w3-container">
-                      <h3>Maquina de Moer P</h3>
-                      <p class="w3-opacity">1000555,0000.00 KZ</p>
-                      <p>Maquina P, usa motor PP with 4P HP ....</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="w3-col m3 w3-margin-bottom">
-                  <div class="w3-light-grey">
-                     <img src="C:\Users\JORGE\Documents\My Web Sites\sil\moagem6.jpg" style="width:100%" onclick="onClick(this)" alt="Maquina de Moer R">
-                    <div class="w3-container">
-                      <h3>Maquina de Moer N</h3>
-                      <p class="w3-opacity">1000,0000.00 KZ</p>
-                      <p>Maquina R, usa motor R with 4R HP ....</p>
-                    </div>
-                  </div>
-                </div>
     </div>
 
 
