@@ -22,7 +22,7 @@ img {
 
 .contact_Item {
   font-size:4vw;
-  padding:0.8vw;
+  padding:2vw;
   color: white;
 }
 
@@ -51,7 +51,7 @@ img {
             margin-top:8%;
           }
           .socialMediaMarginTop {
-            margin-top: 12vh;
+            margin-top: 8vh;
           }
           .membro {
             width:50%;
@@ -63,12 +63,12 @@ img {
           }
           .contact_Item:hover, .contact_Item:active {
             background-color: none;
-            font-size: 6vw;
+            font-size: 9vw;
             padding: 0px;
           }
           .contact_Item {
-            font-size:4vw;
-            padding:0.8vw;
+            font-size:6vw;
+            padding:2vw;
             color: white;
         }
   
