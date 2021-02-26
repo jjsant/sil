@@ -21,7 +21,7 @@ img {
 .photoSlides {display:none;}
 
 .contact_Item {
-  font-size:2vw;
+  font-size:4vw;
   padding:0.8vw;
   color: white;
 }
@@ -31,7 +31,7 @@ img {
 }
 
 .socialMediaMarginTop {
-  margin-top: 13vh;
+  margin-top: 8vh;
 }
 
 .membro {
@@ -76,7 +76,7 @@ img {
 
 .contact_Item:hover, .contact_Item:active {
   background-color: none;
-  font-size: 3vw;
+  font-size: 4vw;
   padding: 0px;
 }
 
