@@ -21,8 +21,8 @@ img {
 .photoSlides {display:none;}
 
 .contact_Item {
-  font-size:2vw;
-  padding:0.8vw;
+  font-size:4vw;
+  padding:2vw;
   color: white;
 }
 
@@ -31,7 +31,7 @@ img {
 }
 
 .socialMediaMarginTop {
-  margin-top: 13vh;
+  margin-top: 8vh;
 }
 
 .membro {
@@ -44,6 +44,7 @@ img {
 }
 
 @media only screen and (max-width: 601px) {
+<<<<<<< HEAD
   .contact_Item {
     padding:2vw;
   }
@@ -67,11 +68,41 @@ img {
     padding: 0px;
     
   }
+=======
+          .contact_Item {
+            padding:2vw;
+          }
+          .sobreMarginTop {
+            margin-top:8%;
+          }
+          .socialMediaMarginTop {
+            margin-top: 8vh;
+          }
+          .membro {
+            width:50%;
+          }
+          .slideshow-container {
+            max-width: 95%;
+            position: relative;
+            margin: auto;
+          }
+          .contact_Item:hover, .contact_Item:active {
+            background-color: none;
+            font-size: 9vw;
+            padding: 0px;
+          }
+          .contact_Item {
+            font-size:6vw;
+            padding:2vw;
+            color: white;
+        }
+  
+>>>>>>> 19a08736c981466faed55bdec4cb017106b366fa
 }
 
 .contact_Item:hover, .contact_Item:active {
   background-color: none;
-  font-size: 3vw;
+  font-size: 4vw;
   padding: 0px;
 }
 
