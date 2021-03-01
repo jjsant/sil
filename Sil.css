@@ -60,12 +60,6 @@ img {
     position: relative;
     margin: auto;
   }
-  .contact_Item:hover, .contact_Item:active {
-    background-color: none;
-    font-size: 6vw;
-    padding: 0px;
-
-  }
  .contact_Item {
     padding:2vw;
   }
