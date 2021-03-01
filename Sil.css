@@ -21,9 +21,8 @@ img {
 .photoSlides {display:none;}
 
 .contact_Item {
-  font-size:4vw;
-  padding:2vw;
   color: white;
+  padding: 10px;
 }
 
 .sobreMarginTop {
@@ -44,7 +43,6 @@ img {
 }
 
 @media only screen and (max-width: 601px) {
-<<<<<<< HEAD
   .contact_Item {
     padding:2vw;
   }
@@ -86,6 +84,7 @@ img {
             position: relative;
             margin: auto;
           }
+          /*
           .contact_Item:hover, .contact_Item:active {
             background-color: none;
             font-size: 9vw;
@@ -96,16 +95,16 @@ img {
             padding:2vw;
             color: white;
         }
-
->>>>>>> 19a08736c981466faed55bdec4cb017106b366fa
+        */
 }
 
+/*
 .contact_Item:hover, .contact_Item:active {
   background-color: none;
   font-size: 4vw;
   padding: 0px;
 }
-
+*/
 .tweeter:hover, .tweeter:active {
   color: #00acee;
 }
@@ -136,6 +135,10 @@ img {
 
 .facebook:hover, .facebook:active {
   color: #3b5998;
+}
+
+.envelope:hover, .envelope:active {
+  color: grey;
 }
 
 a:hover {
