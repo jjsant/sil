@@ -84,6 +84,13 @@ img {
             position: relative;
             margin: auto;
           }
+
+          .footerSize{
+              width:100%;
+              position:absolute;
+              bottom:0;
+              left:0;
+            }
           /*
           .contact_Item:hover, .contact_Item:active {
             background-color: none;
